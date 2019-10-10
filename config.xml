@@ -25,8 +25,15 @@
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
-    
+
+
     <platform name="ios">
+          <config-file target="*-Debug.plist" parent="OneSignal_app_groups_key">
+			  <string>group.com.et.gemspoc.onesignal</string>
+		  </config-file>
+           <config-file target="*-Release.plist" parent="OneSignal_app_groups_key">
+			  <string>group.com.et.gemspoc.onesignal</string>
+		  </config-file>
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
